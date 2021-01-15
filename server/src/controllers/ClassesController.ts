@@ -87,7 +87,7 @@ export default class ClassesController {
         
             await trx.commit();
         
-            return response.status(201).send('Professor ' + name + 'registrado com sucesso');
+            return response.status(201).send('Professor ' + name + ' registrado com sucesso');
         } catch (err) {
             await trx.rollback();
     
