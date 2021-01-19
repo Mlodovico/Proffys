@@ -1,4 +1,4 @@
-# Proffy
+# Proffy Web Front-end
 
 This project has the objective to help teachers and students to
 meeting each other more easily. <br>

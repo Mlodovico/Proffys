@@ -1,5 +1,6 @@
 //IMPORTS
 import React from 'react';
+import Input from '../../components/Input';
 
 //STYLES
 
@@ -13,20 +14,9 @@ export default function TeacherList() {
         <div id="page-teacher-list" className="container">
             <PageHeader title="Esses sao os Proffys disponiveis">
                 <form id="search-teachers">
-                    <div className="input-block">
-                        <label htmlFor="subject">Materia</label>
-                        <input type="text" id="subject"/>
-                    </div>
-
-                    <div className="input-block">
-                        <label htmlFor="week-day">Dia da semana</label>
-                        <input type="text" id="subject"/>
-                    </div>
-
-                    <div className="input-block">
-                        <label htmlFor="time">Horario</label>
-                        <input type="text" id="subject"/>
-                    </div>
+                    <Input name="subject" label="Materia" />
+                    <Input name="week_day" label="Dia da semana" />
+                    <Input type="time" name="time" label="Hora" />
                 </form>
             </PageHeader>
 
