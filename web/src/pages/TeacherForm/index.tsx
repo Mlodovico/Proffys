@@ -6,6 +6,8 @@ import PageHeader from '../../components/PageHeader';
 import warningIcon from '../../assets/images/icons/warning.svg';
 
 import './styles.css';
+import TextArea from '../../components/TextArea';
+import Select from '../../components/Select';
 
 export default function TeacherForm() {
     return (
@@ -22,13 +24,33 @@ export default function TeacherForm() {
                      <Input name="name" label="Nome completo" />
                      <Input name="avatar" label="Avatar" />
                      <Input name="whatsapp" label="WhatsApp" />
+                     <TextArea name="bio" label="Biografia" />
                  </fieldset>
 
                  <fieldset>
                      <legend>Sobre a aula</legend>
 
-                     <Input name="subject" label="Materia" />
+                     <Select 
+                     name="subject" 
+                     label="Materia"
+                     options={[
+                         {value: 'Matematica', label: 'Matematica'},
+                         {value: 'Geografia', label: 'Geografia'},
+                         {value: 'Historia', label: 'Historia'},
+                         {value: 'Biologia', label: 'Biologia'},
+                         {value: 'Informatica', label: 'Informatica'},
+                         {value: 'Fisica', label: 'Fisica'},
+                         {value: 'Portugues', label: 'Portugues'},
+                     ]}
+                     />
                      <Input name="cost" label="Custo da sua hora por aula" />
+                 </fieldset>
+
+                 <fieldset>
+                    <legend>
+                         Hoararios Disponiveis
+                         <button type="button">+ Novo horario</button> 
+                    </legend>
                  </fieldset>
 
                  <footer>
