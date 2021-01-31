@@ -1,5 +1,5 @@
 //IMPORTS
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 //STYLES
@@ -12,6 +12,8 @@ import purpleHeartIcon from '../../assets/images/icons/purple-heart.svg'
 import './styles.css';
 
 export default function Landing() {
+    const [totalConnections, setTotalConnections] = useState();
+
     return (
         <div id="page-landing">
             <div id="page-landing-content" className="container">
